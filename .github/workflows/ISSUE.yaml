@@ -8,5 +8,5 @@ jobs:
         env:
           ISSUE_EVENT_PAYLOAD: "${{toJSON(github.event)}}"
         run: |
-          echo "Issue Event Detials:"
+          echo "Issue Event Details:"
           echo "$ISSUE_EVENT_PAYLOAD"
