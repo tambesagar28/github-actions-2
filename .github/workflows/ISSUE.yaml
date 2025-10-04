@@ -1,5 +1,5 @@
 name: Trigger on Issue Event
-on: issue
+on: issues
 jobs:
   Issue-Type:
     runs-on: ubuntu-latest
