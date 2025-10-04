@@ -1,7 +1,5 @@
 name: Trigger on Issue Event
-on: 
-  issue:
-    types: [openend, labeled, closed]
+on: issue
 jobs:
   Issue-Type:
     runs-on: ubuntu-latest
