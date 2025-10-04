@@ -1,0 +1,14 @@
+name: Trigger on Issue Event
+on: 
+  issue:
+    types: [openend, labeled, closed]
+jobs:
+  Issue-Type:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Details of issue event Payload
+        env:
+          ISSUE_EVENT_PAYLOAD: "${{toJSON(github.event)}}"
+        run: |
+          echo "Issue Event Detials:"
+          echo "$ISSUE_EVENT_PAYLOAD"
